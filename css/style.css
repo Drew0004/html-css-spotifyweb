@@ -58,6 +58,29 @@ aside > .my-col-left ul{
     margin-bottom: var(--spacing-50);
 }
 
+aside > .my-col-left > .container > :nth-child(2) > li{
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: var(--gray-color);
+    margin: 10px 0;
+}
+
+aside > .my-col-left ul > li > img{
+    width: 10%;
+    height: 30px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+aside > .my-col-left img{
+    width: 70%;
+    margin: var(--spacing-20) 0;
+}
+
+.aside-title{
+    color: var(--white-color);
+}
+
 .my-col-left-bottom{
     color: var(--white-color);
 }

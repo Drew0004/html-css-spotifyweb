@@ -48,8 +48,9 @@ html{
 aside{
     width: 20%;
     background-color: black;
-    border: 1px dashed salmon;
-    /* height: calc(100% - 100px); */
+    /* border: 1px dashed salmon; */
+    overflow: auto;
+    /* height: 100%; */
 }
 
 aside > .my-col-left ul{
@@ -79,10 +80,75 @@ aside > .my-col-left img{
 
 .aside-title{
     color: var(--white-color);
+    margin-bottom: 10px;
+}
+
+.aside-playlist{
+    color: var(--gray-color);
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
+.plus{
+    font-size: 2.2em;
+    color: lightgray;
+    vertical-align: middle;
+}
+
+.playlist-ul > li{
+    color: var(--gray-color);
+    padding-bottom: var(--spacing-20);
+    font-size: 0.9em;
 }
 
 .my-col-left-bottom{
     color: var(--white-color);
+    position: sticky;
+    top: 100%;
+    margin-bottom: var(--spacing-20);
+}
+
+.download-icon{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.my-col-left-bottom hr{
+    width: 100%;
+    border: 1px solid var(--gray-color);
+    margin: var(--spacing-30) 0;
+
+}
+
+.download{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--gray-color);
+}
+
+.user{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.circle-user{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.circle-user > img{
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    border-radius: 50%;
 }
 
 /* Sezione main destra */

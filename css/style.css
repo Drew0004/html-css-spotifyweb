@@ -12,11 +12,33 @@
     general 
 */
 
-/* 
-    main 
-*/
+html{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .container{
     margin: 0 auto;
     max-width: 1200px;
+}
+
+:root{
+    --white-color: #ffffff;
+}
+
+/* 
+    main 
+*/
+
+/* Sezione Aside */
+
+aside > .my-row{
+    background-color: black;
+    border: 1px dashed salmon;
+    width: 20%;
+    min-height: 100vh;
+}
+
+aside > .my-row > .my-col ul{
+    list-style: none;
+    color: var(--white-color);
 }

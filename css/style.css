@@ -19,6 +19,7 @@ html{
 .container{
     margin: 0 auto;
     max-width: 1200px;
+    padding: 0 20px;
 }
 
 :root{
@@ -67,7 +68,7 @@ header{
     background-color: var(--header-blue);
     width: 80%;
     min-height: 100px;
-    border: 1px dashed salmon;
+    /* border: 1px dashed salmon; */
     position: fixed;
     top: 0;
     right: 0;
@@ -89,7 +90,7 @@ header > a{
 section{
     width: 80%;
     background-color: var(--blue-background);
-    border: 1px dashed salmon;
+    /* border: 1px dashed salmon; */
     min-height: calc(100% - 100px);
     overflow: auto;
 }
@@ -124,6 +125,12 @@ section{
     margin-top: var(--spacing-30);
 }
 
+.my-row-main > h3{
+    color: var(--gray-color);
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
 .card-container{
     margin-top: var(--spacing-50);
     display: flex;
@@ -131,9 +138,9 @@ section{
 }
 
 .card-container .card{
-    width: calc((100% / 6) - 10px);
+    width: calc((100% / 6) - 20px);
     min-height: 100px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .card > img{
@@ -153,6 +160,10 @@ section{
     color: var(--gray-color);
     font-size: 0.8em;
     text-align: center;
+}
+
+.rounded > img{
+    border-radius: 50%;
 }
 
 /* Footer */
@@ -184,9 +195,9 @@ footer div{
     }
 
     .card-container .card{
-        width: calc((100% / 4) - 10px);
+        width: calc((100% / 4) - 20px);
         min-height: 100px;
-        margin-right: 10px;
+        margin-right: 20px;
         margin-bottom: var(--spacing-20);
     }
     
@@ -197,9 +208,9 @@ footer div{
 @media screen and (max-width: 700px) {
     
     .card-container .card{
-        width: calc((100% / 2) - 10px);
+        width: calc((100% / 2) - 20px);
         min-height: 100px;
-        margin-right: 10px;
+        margin-right: 20px;
         margin-bottom: var(--spacing-20);
     }
 

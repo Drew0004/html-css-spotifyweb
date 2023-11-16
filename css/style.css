@@ -18,7 +18,7 @@ html{
 
 .container{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 :root{
@@ -45,7 +45,7 @@ aside{
     width: 20%;
     background-color: black;
     border: 1px dashed salmon;
-    /* min-height: calc(100% - 100px); */
+    /* height: calc(100% - 100px); */
 }
 
 aside > .my-col-left ul{
@@ -62,11 +62,25 @@ aside > .my-col-left ul{
 
 header{
     background-color: var(--header-blue);
-    width: 100%;
+    width: 80%;
     min-height: 100px;
     border: 1px dashed salmon;
     position: fixed;
     top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header > a{
+    color: var(--white-color);
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-decoration: none;
 }
 
 section{
@@ -79,15 +93,38 @@ section{
 
 .my-row-main{
     margin-top: 150px;
+}
+
+.my-row-main ul{
+    color: var(--white-color);
+}
+
+.nav-container > nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container > nav > ul > li{
+    padding: 0 20px;
+}
+
+.card-container{
     display: flex;
     flex-wrap: wrap;
 }
 
-.my-row-main .card{
-    width: 10%;
+.card-container .card{
+    width: calc((100% / 6) - 20px);
     min-height: 100px;
     background-color: darkolivegreen;
     border: 1px dashed salmon;
+    margin: 0 10px;
+}
+
+.card > img{
+    width: 100%;
+    display: block;
 }
 
 /* Footer */

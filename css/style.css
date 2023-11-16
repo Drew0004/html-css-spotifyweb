@@ -53,6 +53,23 @@ aside{
     height: calc(100vh - 100px);
 }
 
+
+#logo-small{
+    display: none;
+    width: 60%;
+    margin: 0;
+}
+
+.responsive-icons{
+    display: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.responsive-icons img{
+    padding: 15px 0;
+}
+
 aside > .my-col-left ul{
     list-style: none;
     color: var(--white-color);
@@ -308,8 +325,32 @@ footer div{
 
 @media screen and (max-width: 600px) {
 
-    .aside{
+    section{
+        width: calc(100% - 50px);
+    }
+
+    aside{
         min-width: 50px;
     }
-    
+
+    .logo, aside ul, aside h2, aside h3, aside .my-col-left-bottom{
+        display: none;
+    }
+
+    /* #logo-small{
+        display: block;
+        width: 10%;
+        margin: 0;
+    }
+
+    .responsive-icons{
+        display: block;
+        width: 10%;
+        margin: 0;
+    } */
+
+    .responsive-icons, #logo-small{
+        display: block;
+    }
+   
 }

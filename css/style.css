@@ -304,14 +304,14 @@ footer div{
 }
 
 .song-box{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .song-box > img{
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
 }
 
@@ -325,15 +325,17 @@ footer div{
 
 .song-icons > i{
     padding-right: 10px;
+    color: var(--gray-color);
+    font-size: 0.9em;
 }
 
 .artist h2{
-    font-size: 1em;
+    font-size: 0.7em;
     margin-bottom: 10px;
 }
 
 .artist h3{
-    font-size: 0.7em;
+    font-size: 0.5em;
     color: var(--gray-color);
 }
 
@@ -413,7 +415,7 @@ footer div{
 .foot-right-icons li{
     display: inline-block;
     padding: 0 10px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .foot-right-icons a{
@@ -424,7 +426,7 @@ footer div{
 
 .small{
     width: 40%;
-    margin-left: var(--spacing-30);
+    margin-left: var(--spacing-20);
 }
 
 
@@ -448,6 +450,7 @@ footer div{
         min-height: 100px;
         margin-right: 20px;
         margin-bottom: var(--spacing-20);
+        
     }
     
 }
@@ -461,6 +464,25 @@ footer div{
         min-height: 100px;
         margin-right: 20px;
         margin-bottom: var(--spacing-20);
+    }
+
+    .foot-right-icons{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .foot-right-icons li{
+        display: inline-block;
+        padding: 0 5px;
+        font-size: 0.9em;
+    }
+
+    .small{
+        width: 40%;
+        margin-left: 10px;
     }
 
 }

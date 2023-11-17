@@ -190,6 +190,7 @@ header > a{
     border: 1px solid white;
     border-radius: 25px;
     text-decoration: none;
+    margin-right: 20px;
 }
 
 section{

@@ -224,6 +224,23 @@ section{
     color: var(--gray-color);
 }
 
+.nav-overlay{
+    background-color: #ADFF2E;
+    width: 60%;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: none;
+}
+
+.nav-container > nav > ul > li:hover .nav-overlay{
+    display: block;
+}
+
+.nav-container > nav > ul > li:hover a{
+    color: var(--white-color);
+}
+
 .my-row-main > h2{
     color: var(--white-color);
     font-size: 2em;

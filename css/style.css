@@ -248,10 +248,38 @@ section{
     margin-right: 20px;
 }
 
-.card > img{
+.card-img > img{
     width: 100%;
     display: block;
     margin-bottom: var(--spacing-20);
+}
+
+.card-img{
+    position: relative;
+    width: 100%;
+}
+
+.card-overlay{
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(0.5px);
+    display: none;
+}
+
+.card-overlay > i{
+    color: var(--white-color);
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card:hover .card-overlay{
+    display: block;
 }
 
 .card h2{
@@ -267,6 +295,10 @@ section{
     text-align: center;
 }
 
+.rounded{
+    border-radius: 50%;
+}
+
 .rounded > img{
     border-radius: 50%;
 }
@@ -275,7 +307,7 @@ section{
 
 footer{
     background-color: var(--footer-gray);
-    border: 1px dashed salmon;
+    /* border: 1px dashed salmon; */
     height: 100px;
     display: flex;
 }

@@ -463,6 +463,10 @@ footer div{
     display: inline-block;
 }
 
+#scaling-overlay:hover{
+    transform: scale(1.4);
+}
+
 .foot-center-time{
     width: 100%;
     display: flex;
@@ -475,6 +479,7 @@ footer div{
     text-align: center;
     padding: 0 var(--spacing-20);
 }
+
 
 .timeline{
     background-color: var(--gray-color);
@@ -492,6 +497,26 @@ footer div{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.dot-overlay{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.timeline:hover .timeline-seconds{
+    background-color: var(--green-color);
+}
+
+.timeline:hover .dot-overlay{
+    display: block;
 }
 
 /* foot parte destra */

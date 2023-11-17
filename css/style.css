@@ -87,6 +87,10 @@ aside > .my-col-left > .container > :nth-child(2) > li{
     margin: 10px 0;
 }
 
+aside > .my-col-left > .container > :nth-child(2) > li:hover{
+    color: var(--white-color);
+}
+
 aside > .my-col-left ul > li > img{
     width: 10%;
     height: 30px;
@@ -104,10 +108,19 @@ aside > .my-col-left img{
     margin-bottom: 10px;
 }
 
+
 .aside-playlist{
     color: var(--gray-color);
     vertical-align: middle;
     margin-bottom: 15px;
+}
+
+.aside-playlist:hover{
+    color: var(--white-color);
+}
+
+.aside-playlist:hover > i{
+    color: var(--white-color);
 }
 
 .plus{
@@ -127,6 +140,10 @@ aside > .my-col-left img{
     color: var(--gray-color);
     padding-bottom: var(--spacing-20);
     font-size: 0.9em;
+}
+
+.playlist-ul > li:hover{
+    color: var(--white-color);
 }
 
 .my-col-left-bottom{
@@ -159,6 +176,10 @@ aside > .my-col-left img{
     color: var(--gray-color);
     padding-top: 20px;
     display: inline-block;
+}
+
+.download:hover{
+    color: var(--white-color);
 }
 
 .user{

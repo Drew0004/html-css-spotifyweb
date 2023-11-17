@@ -495,7 +495,7 @@ footer div{
     
     .foot-right-icons li{
         display: inline-block;
-        padding: 0 5px;
+        padding: 0 2px;
         font-size: 0.9em;
     }
 
@@ -536,6 +536,24 @@ footer div{
 
     .responsive-icons, #logo-small{
         display: block;
+    }
+
+    .song-icons{
+        margin-left: var(--spacing-20);
+    }
+
+    .foot-right-icons{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .foot-right-icons li{
+        display: inline-block;
+        padding: 0 2px;
+        font-size: 0.9em;
     }
    
 }

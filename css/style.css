@@ -409,6 +409,11 @@ footer div{
     margin-left: 15px;
 }
 
+.artist > h3:hover{
+    text-decoration: underline;
+    color: var(--white-color);
+}
+
 .song-icons{
     margin-left: var(--spacing-30);
 }
@@ -417,6 +422,10 @@ footer div{
     padding-right: 10px;
     color: var(--gray-color);
     font-size: 0.9em;
+}
+
+.song-icons > i:hover{
+    color: var(--white-color);
 }
 
 .artist h2{

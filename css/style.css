@@ -277,11 +277,68 @@ footer{
     background-color: var(--footer-gray);
     border: 1px dashed salmon;
     height: 100px;
+    display: flex;
 }
+
+.foot-container{
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
 
 footer div{
     color: var(--white-color);
+    border: 1px dashed salmon;
+    width: calc(100% / 3);
 }
+
+/* foot parte sinistra */
+
+.foot-left{
+    display: flex;
+    align-items: center;
+}
+
+.song-box{
+    width: 80px;
+    height: 80px;
+}
+
+.song-box > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist{
+    margin-left: 15px;
+}
+
+.song-icons{
+    margin-left: var(--spacing-30);
+}
+
+.song-icons > i{
+    padding-right: 10px;
+}
+
+.artist h2{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.artist h3{
+    font-size: 0.7em;
+    color: var(--gray-color);
+}
+
+/* foot parte centrale */
+
+/* foot parte destra */
 
 
 /* ------- MEDIA QUERY ------- */

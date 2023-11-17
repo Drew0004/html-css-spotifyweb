@@ -22,6 +22,7 @@ html{
     padding: 0 20px;
 }
 
+
 :root{
     --white-color: #ffffff;
     --blue-background: #141922;
@@ -51,6 +52,8 @@ aside{
     /* border: 1px dashed salmon; */
     overflow: auto;
     height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -112,6 +115,13 @@ aside > .my-col-left img{
     vertical-align: middle;
 }
 
+.playlist-ul{
+    height: 100%;
+    overflow: auto;
+    padding: 0 20px;
+    list-style: none;
+}
+
 .playlist-ul > li{
     color: var(--gray-color);
     padding-bottom: var(--spacing-20);
@@ -120,8 +130,8 @@ aside > .my-col-left img{
 
 .my-col-left-bottom{
     color: var(--white-color);
-    position: sticky;
-    top: 100%;
+    /* position: sticky;
+    top: 100%; */
     margin-bottom: var(--spacing-20);
 }
 
@@ -131,6 +141,7 @@ aside > .my-col-left img{
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
+    padding-top: 10px;
 }
 
 .my-col-left-bottom hr{
@@ -145,6 +156,8 @@ aside > .my-col-left img{
     font-weight: bold;
     font-size: 1em;
     color: var(--gray-color);
+    padding-top: 20px;
+    display: inline-block;
 }
 
 .user{

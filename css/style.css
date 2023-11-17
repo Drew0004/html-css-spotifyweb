@@ -292,7 +292,7 @@ footer{
 footer div{
     color: var(--white-color);
     border: 1px dashed salmon;
-    width: calc(100% / 3);
+    width: calc(100% / 3);  /* da rimuovere */
 }
 
 /* foot parte sinistra */
@@ -337,6 +337,54 @@ footer div{
 }
 
 /* foot parte centrale */
+
+.foot-center-icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.foot-center-icons li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.7em;
+}
+
+.foot-center-icons a{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.foot-center-time{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.seconds{
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.timeline{
+    background-color: var(--gray-color);
+    width: 80%;
+    height: 7px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.timeline-seconds{
+    background-color: lightgrey;
+    width: 20%;
+    height: 7px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /* foot parte destra */
 
